@@ -117,6 +117,24 @@ nav {
     font-weight: 900;
 }
 
+#mobile {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #08beb2;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
 .sport {
     width: 100%;
     margin-top: 80px;
@@ -669,6 +687,9 @@ footer {
     margin: 8px 0px;
 }
 
+#navbar {
+    display: flex;
+}
 
 @media(max-width:576px) {
     .col {
@@ -688,15 +709,56 @@ footer {
 
     .col {
         width: 100%;
-        margin: 0px auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        /* justify-content: space-evenly; */
     }
 
-    .r-widght ul li a {
-        padding: 10px 13px;
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #navbar ul li {
+        padding: 10px 0px;
+    }
+
+    #navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 180px;
+        background-color: #1a1a1a;
+        padding: 50px 0 0 5px;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    #mobile i {
+        color: #00c0ff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: block;
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        font-size: 24px;
+        color: #00c0ff;
     }
 
     .img img {
@@ -710,15 +772,12 @@ footer {
     }
 
     .sport h3 {
-        text-align: center;
         font-size: 80px;
         font-weight: 900;
     }
 
     .small-text {
         width: 100%;
-        margin: 0px auto;
-        text-align: center;
         font-size: 15px;
     }
 
@@ -768,13 +827,15 @@ footer {
         padding: 0px 9px;
     }
 
-    .zig-zack{
+    .zig-zack {
         padding: 0px 5px;
     }
-    .side-img{
+
+    .side-img {
         width: 90%;
         margin: 5px 0px;
     }
+
     .col-33 {
         width: 100%;
     }
@@ -825,8 +886,8 @@ footer {
 
     .small-text {
         width: 100%;
-        margin: 0px auto;  
-        font-size: 15px;   
+        margin: 0px auto;
+        font-size: 15px;
     }
 
     .button {
@@ -839,15 +900,14 @@ footer {
     }
 
     .sec4 {
-        /* width: 100%; */
-        background-image: url(../image/Bg\ image2-modified.png.);
+        width: 100%;
         background-size: cover;
     }
 
     .card {
         width: 50%;
         text-align: center;
-        margin: 30px 10px;       
+        margin: 30px 10px;
     }
 
     .card p {
@@ -891,7 +951,7 @@ footer {
 
     .col-4 {
         width: 100%;
-        flex-wrap: wrap;     
+        flex-wrap: wrap;
     }
 
 }
@@ -937,7 +997,7 @@ footer {
     .by-yr-tic {
         text-align: end;
         width: 50%;
-        
+
     }
 
     .zig-zack {

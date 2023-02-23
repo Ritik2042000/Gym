@@ -23,13 +23,17 @@
                             <span>FITNESSGYM</span>
                             <span>YOUR TAGLINE HERE</span>
                         </div>
-                        <div class=" logo r-widght">
+                        <div id="navbar" class="logo r-widght">
                             <ul>
                                 <li><a href="#">HOME</a></li>
                                 <li><a href="#">ABOUT</a></li>
                                 <li><a href="#">SHOP</a></li>
                                 <li><a href="#">CONTCT</a></li>
+                                <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
                             </ul>
+                        </div>
+                        <div id="mobile">
+                            <i id="bar" class="fas fa-outdent"></i>
                         </div>
                     </div>
                 </div>
@@ -411,6 +415,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        const bar = document.getElementById('bar')
+        const nav = document.getElementById('navbar')
+        const close = document.getElementById('close')
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active')
+            })
+
+        }
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active')
+            })
+
+        }
+    </script>
 </body>
 
 </html>
