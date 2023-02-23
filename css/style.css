@@ -261,11 +261,12 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     background-color: rgba(10, 10, 10, 0.73);
-    transform:scale(1.03);
+    transform: scale(1.03);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.551);
 }
+
 .card h3 {
     font-size: 17px;
     font-weight: 700;
@@ -345,7 +346,7 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
-.line span:hover{
+.line span:hover {
     font-style: 18px;
     font-weight: 700;
 }
@@ -364,7 +365,7 @@ nav {
     transition: all 0.5s ease-in-out;
 }
 
-.col-3 img:hover{
+.col-3 img:hover {
     box-shadow: 5px 5px 5px #1db8e76e;
     transform: scale(1.1);
 }
@@ -449,7 +450,7 @@ nav {
 .nature {
     width: 500px;
     font-family: Raleway;
-    
+
 }
 
 .nature h3 {
@@ -631,7 +632,7 @@ footer {
     transition: all 0.3s ease-in-out;
     margin: 0px 3px;
     filter: brightness(0.85);
-    
+
 }
 
 .social-icon i:hover {
@@ -656,7 +657,6 @@ footer {
     line-height: 33px;
     font-weight: 400;
     transition: all 0.5s;
-
 }
 
 .left-list ul li a:hover {
@@ -707,16 +707,11 @@ footer {
 
     .sport {
         width: 100%;
-        /* margin-top: 80px; */
     }
 
     .sport h3 {
         text-align: center;
         font-size: 80px;
-        color: white;
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-fill-color: transparent;
-        font-family: Raleway-bold;
         font-weight: 900;
     }
 
@@ -724,9 +719,7 @@ footer {
         width: 100%;
         margin: 0px auto;
         text-align: center;
-        font-family: Raleway;
         font-size: 15px;
-        color: #ffffff;
     }
 
     .small-text p {
@@ -750,7 +743,6 @@ footer {
     .sec4 {
         width: 100%;
         background-size: 100% 100%;
-        /* background-repeat: no-repeat; */
         object-fit: contain;
     }
 
@@ -766,19 +758,23 @@ footer {
     .col-50 {
         width: 100%;
     }
-    
+
     .col-50 img {
-        width: 95%;
-        object-fit: contain;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .nature {
         width: 100%;
-        font-family: Raleway;
         padding: 0px 9px;
     }
 
+    .zig-zack{
+        padding: 0px 5px;
+    }
+    .side-img{
+        width: 90%;
+        margin: 5px 0px;
+    }
     .col-33 {
         width: 100%;
     }
@@ -794,9 +790,6 @@ footer {
         text-align: end;
         width: 100%;
         padding: 20px 5px;
-        color: #fefefe;
-        font-family: Roboto;
-        text-align: right;
         margin: 20px 0 20px auto;
     }
 
@@ -804,17 +797,17 @@ footer {
         display: inline-block;
         width: 100%;
         font-size: 16px;
-        font-weight: 400;
-        margin: 30px 0px;
+
     }
 
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
         margin: 0px auto;
+        /* justify-content: flex-end; */
     }
 
-    .about{
+    .about {
         padding: 0px 5px;
     }
 
@@ -832,18 +825,14 @@ footer {
 
     .small-text {
         width: 100%;
-        margin: 0px auto;
-        text-align: center;
-        font-family: Raleway;
-        font-size: 15px;
-        color: #ffffff;
+        margin: 0px auto;  
+        font-size: 15px;   
     }
 
     .button {
         width: 100%;
         padding: 50px 0px;
     }
-
 
     .sec2 {
         width: 100%;
@@ -853,18 +842,12 @@ footer {
         /* width: 100%; */
         background-image: url(../image/Bg\ image2-modified.png.);
         background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: contain;
     }
 
     .card {
         width: 50%;
-        /* height: 310px; */
-        background-color: rgba(10, 10, 10, 0.622);
-        box-shadow: 20px 20px 10px rgb(0, 0, 0, 0);
         text-align: center;
-        margin: 30px 10px;
-        color: #ffffff;
+        margin: 30px 10px;       
     }
 
     .card p {
@@ -882,7 +865,7 @@ footer {
 
     .nature {
         width: 100%;
-        font-family: Raleway;
+
     }
 
     .col-33 {
@@ -890,12 +873,8 @@ footer {
     }
 
     .by-yr-tic {
-        text-align: end;
         width: 50%;
         padding: 20px 0px;
-        color: #fefefe;
-        font-family: Roboto;
-        text-align: right;
         margin: 20px 0 20px auto;
     }
 
@@ -907,14 +886,12 @@ footer {
         display: inline-block;
         width: 100%;
         font-size: 16px;
-        font-weight: 400;
         margin: 30px 0px;
     }
 
     .col-4 {
         width: 100%;
-        flex-wrap: wrap;
-        /* margin: 0px auto; */
+        flex-wrap: wrap;     
     }
 
 }
@@ -951,7 +928,6 @@ footer {
 
     .nature {
         width: 100%;
-        font-family: Raleway;
     }
 
     .col-33 {
@@ -961,25 +937,21 @@ footer {
     .by-yr-tic {
         text-align: end;
         width: 50%;
-        padding: 20px 0px;
-        color: #fefefe;
-        font-family: Roboto;
-        text-align: right;
-        margin: 20px 0 20px auto;
+        
     }
 
     .zig-zack {
         width: 50%;
+        padding: 0px 4px;
     }
 
     .side-img img {
-        width: 100%;
+        width: 50%;
     }
 
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
-        /* margin: 0px auto; */
     }
 
 }
@@ -1005,8 +977,6 @@ footer {
         text-align: end;
         width: 300px;
         padding: 100px 0;
-        color: #fefefe;
-        font-family: Roboto;
         text-align: right;
         margin: 100px 0 100px auto;
     }
@@ -1020,6 +990,11 @@ footer {
         margin: 70px auto;
     }
 
+    .sec4 {
+        width: 100%;
+        background-size: cover;
+    }
+
     .side-img img {
         width: 50%;
     }
@@ -1027,7 +1002,6 @@ footer {
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
-        /* margin: 0px auto; */
     }
 
 }
@@ -1061,9 +1035,6 @@ footer {
         text-align: end;
         width: 300px;
         padding: 100px 0;
-        color: #fefefe;
-        font-family: Roboto;
-        text-align: right;
         margin: 100px 0 100px auto;
     }
 
@@ -1075,9 +1046,13 @@ footer {
         width: 33%;
     }
 
+    .sec4 {
+        width: 100%;
+        background-size: cover;
+    }
+
     .col-4 {
         width: 1280px;
         flex-wrap: wrap;
-        /* margin: 0px auto; */
     }
 }
