@@ -64,10 +64,6 @@ nav {
     background-color: black;
 }
 
-.logo {
-    /* margin: 0px auto; */
-}
-
 .col {
     width: 1280px;
     margin: 0px auto;
@@ -115,24 +111,6 @@ nav {
 
 .r-widght ul li a:hover {
     font-weight: 900;
-}
-
-#mobile {
-    display: none;
-}
-
-#close {
-    display: none;
-}
-
-#navbar li a.active::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #08beb2;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
 }
 
 .sport {
@@ -209,11 +187,10 @@ nav {
 }
 
 .detalis p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .sec3 {
-    /* height: 40vh; */
     background-color: rgb(40, 39, 39);
     display: flex;
 }
@@ -468,7 +445,7 @@ nav {
 .nature {
     width: 500px;
     font-family: Raleway;
-
+    margin: 0px 5px;
 }
 
 .nature h3 {
@@ -547,6 +524,18 @@ nav {
 
 .side-img {
     width: 50%;
+    animation: spark 3s infinite alternate ease-in-out;
+}
+
+@keyframes spark {
+
+    0% {
+        filter: brightness(0.3);
+    }
+
+    100% {
+        filter: brightness(1.15);
+    }
 }
 
 .side-img img {
@@ -675,6 +664,7 @@ footer {
     line-height: 33px;
     font-weight: 400;
     transition: all 0.5s;
+
 }
 
 .left-list ul li a:hover {
@@ -687,9 +677,6 @@ footer {
     margin: 8px 0px;
 }
 
-#navbar {
-    display: flex;
-}
 
 @media(max-width:576px) {
     .col {
@@ -709,56 +696,15 @@ footer {
 
     .col {
         width: 100%;
-        /* justify-content: space-evenly; */
-    }
-
-    #navbar ul {
+        margin: 0px auto;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    #navbar ul li {
-        padding: 10px 0px;
-    }
-
-    #navbar {
-        display: flex;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 180px;
-        background-color: #1a1a1a;
-        padding: 50px 0 0 5px;
-        transition: 0.3s;
-        z-index: 1;
-    }
-
-    #navbar.active {
-        right: 0px;
-    }
-
-    #mobile {
-        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        margin-left: 30%;
+        justify-content: center;
     }
 
-    #mobile i {
-        color: #00c0ff;
-        font-size: 24px;
-        padding-left: 20px;
-    }
-
-    #close {
-        display: block;
-        top: 30px;
-        left: 30px;
-        position: absolute;
-        font-size: 24px;
-        color: #00c0ff;
+    .r-widght ul li a {
+        padding: 10px 13px;
     }
 
     .img img {
@@ -769,16 +715,26 @@ footer {
 
     .sport {
         width: 100%;
+        /* margin-top: 80px; */
     }
 
     .sport h3 {
+        text-align: center;
         font-size: 80px;
+        color: white;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-fill-color: transparent;
+        font-family: Raleway-bold;
         font-weight: 900;
     }
 
     .small-text {
         width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        font-family: Raleway;
         font-size: 15px;
+        color: #ffffff;
     }
 
     .small-text p {
@@ -802,6 +758,7 @@ footer {
     .sec4 {
         width: 100%;
         background-size: 100% 100%;
+        /* background-repeat: no-repeat; */
         object-fit: contain;
     }
 
@@ -819,21 +776,15 @@ footer {
     }
 
     .col-50 img {
-        width: 100%;
+        width: 75%;
+        object-fit: contain;
+        margin: 10px auto;
     }
 
     .nature {
         width: 100%;
+        font-family: Raleway;
         padding: 0px 9px;
-    }
-
-    .zig-zack {
-        padding: 0px 5px;
-    }
-
-    .side-img {
-        width: 90%;
-        margin: 5px 0px;
     }
 
     .col-33 {
@@ -851,6 +802,9 @@ footer {
         text-align: end;
         width: 100%;
         padding: 20px 5px;
+        color: #fefefe;
+        font-family: Roboto;
+        text-align: right;
         margin: 20px 0 20px auto;
     }
 
@@ -858,14 +812,14 @@ footer {
         display: inline-block;
         width: 100%;
         font-size: 16px;
-
+        font-weight: 400;
+        margin: 30px 0px;
     }
 
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
         margin: 0px auto;
-        /* justify-content: flex-end; */
     }
 
     .about {
@@ -887,7 +841,10 @@ footer {
     .small-text {
         width: 100%;
         margin: 0px auto;
+        text-align: center;
+        font-family: Raleway;
         font-size: 15px;
+        color: #ffffff;
     }
 
     .button {
@@ -895,19 +852,27 @@ footer {
         padding: 50px 0px;
     }
 
+
     .sec2 {
         width: 100%;
     }
 
     .sec4 {
-        width: 100%;
+        /* width: 100%; */
+        background-image: url(../image/Bg\ image2-modified.png.);
         background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
     }
 
     .card {
         width: 50%;
+        /* height: 310px; */
+        background-color: rgba(10, 10, 10, 0.622);
+        box-shadow: 20px 20px 10px rgb(0, 0, 0, 0);
         text-align: center;
         margin: 30px 10px;
+        color: #ffffff;
     }
 
     .card p {
@@ -925,7 +890,7 @@ footer {
 
     .nature {
         width: 100%;
-
+        font-family: Raleway;
     }
 
     .col-33 {
@@ -933,8 +898,12 @@ footer {
     }
 
     .by-yr-tic {
+        text-align: end;
         width: 50%;
         padding: 20px 0px;
+        color: #fefefe;
+        font-family: Roboto;
+        text-align: right;
         margin: 20px 0 20px auto;
     }
 
@@ -946,19 +915,25 @@ footer {
         display: inline-block;
         width: 100%;
         font-size: 16px;
+        font-weight: 400;
         margin: 30px 0px;
     }
 
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
+        /* margin: 0px auto; */
     }
 
 }
 
 @media (min-width:768px) {
     .col {
-        width: 100%;
+        width: 95%;
+    }
+
+    .r-widght ul li a {
+        padding: 10px 20px;
     }
 
     .sec2 {
@@ -966,16 +941,17 @@ footer {
     }
 
     .card {
-        width: 25%;
+        width: 28%;
     }
 
     .card p {
-        width: 40%;
+        width: 90%;
         margin: 70px auto;
     }
 
-    .col-33 {
-        width: 100%;
+    .col-3{
+        width: 180px;
+        margin: 25px;
     }
 
     .col-50 {
@@ -988,21 +964,26 @@ footer {
 
     .nature {
         width: 100%;
+        font-family: Raleway;
     }
 
     .col-33 {
-        width: 100%;
+        width: 33%;
     }
 
     .by-yr-tic {
         text-align: end;
         width: 50%;
-
+        padding: 20px 0px;
+        color: #fefefe;
+        font-family: Roboto;
+        text-align: right;
+        margin: 20px 0 20px auto;
     }
 
     .zig-zack {
-        width: 50%;
-        padding: 0px 4px;
+        width: 45%;
+        padding: 3px;
     }
 
     .side-img img {
@@ -1018,7 +999,11 @@ footer {
 
 @media (min-width:992px) {
     .col {
-        width: 100%;
+        width: 95%;
+    }
+
+    .small-text{
+        width: 68%;
     }
 
     .sec2 {
@@ -1029,14 +1014,21 @@ footer {
         width: 50%;
     }
 
+    .we-about {
+        width: 260px;
+        margin: 30px;
+    }
+
     .col-33 {
-        width: 100%;
+        width: 33%;
     }
 
     .by-yr-tic {
         text-align: end;
         width: 300px;
         padding: 100px 0;
+        color: #fefefe;
+        font-family: Roboto;
         text-align: right;
         margin: 100px 0 100px auto;
     }
@@ -1046,22 +1038,23 @@ footer {
     }
 
     .card p {
-        width: 40%;
+        width: 61%;
         margin: 70px auto;
-    }
-
-    .sec4 {
-        width: 100%;
-        background-size: cover;
     }
 
     .side-img img {
         width: 50%;
     }
 
+    .col-3 {
+        width: 240px;
+        margin: 40px;
+    }
+
     .col-4 {
         width: 100%;
         flex-wrap: wrap;
+        /* margin: 0px auto; */
     }
 
 }
@@ -1091,10 +1084,19 @@ footer {
         width: 100%;
     }
 
+    .sec4 {
+        width: 100%;
+        background-size: cover;
+        object-fit: contain;
+    }
+
     .by-yr-tic {
         text-align: end;
         width: 300px;
         padding: 100px 0;
+        color: #fefefe;
+        font-family: Roboto;
+        text-align: right;
         margin: 100px 0 100px auto;
     }
 
@@ -1106,13 +1108,13 @@ footer {
         width: 33%;
     }
 
-    .sec4 {
-        width: 100%;
-        background-size: cover;
-    }
-
     .col-4 {
         width: 1280px;
         flex-wrap: wrap;
+        /* margin: 0px auto; */
+    }
+
+    .card p {
+        width: 55%;
     }
 }
