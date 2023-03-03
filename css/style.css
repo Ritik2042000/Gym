@@ -858,8 +858,7 @@ footer {
     }
 
     .sec4 {
-        /* width: 100%; */
-        background-image: url(../image/Bg\ image2-modified.png.);
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         object-fit: contain;
